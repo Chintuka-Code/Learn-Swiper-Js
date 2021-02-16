@@ -1,0 +1,47 @@
+.swiper {
+  width: calc(100% - 4rem);
+  height: 500px;
+  //   for preview prev and last slide
+  padding: 0.5rem 2rem;
+  position: relative;
+}
+
+:host {
+  ::ng-deep {
+    .swiper-button-prev,
+    .swiper-button-next {
+      border-radius: 50%;
+      border: 1px solid black;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      top: 30%;
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      font-size: 1.4em;
+      color: rgb(8, 2, 1);
+    }
+  }
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    width: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+  }
+}
